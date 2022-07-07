@@ -102,5 +102,9 @@ echo "Run integration tests for NVTabular"
 /nvtabular/ci/test_integration.sh $container $devices --report 1
 
 # Test Transformers4Rec
+echo "Run integration tests for Merlin Models"
+/models/ci/test_integration.sh $container $devices
+
+# Test Transformers4Rec
 echo "Run integration tests for Transformers4Rec"
 /transformers4rec/ci/test_integration.sh $container $devices
